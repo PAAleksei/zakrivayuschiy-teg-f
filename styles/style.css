@@ -18,7 +18,6 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-text);
-  font-variation-settings: 'wdth' var(--main-width), 'wght' var(--main-weight);
   background-color: var(--bg-color);
   color: var(--accent-color);
   background-image: var(--bg-gradient);
@@ -204,6 +203,7 @@
 .card__article-text {
   font-size: 18px;
   line-height: 21px;
+  font-variation-settings: 'wdth' var(--main-width), 'wght' var(--main-weight);
   display: flex;
   flex-direction: column;
   gap: 26px;
