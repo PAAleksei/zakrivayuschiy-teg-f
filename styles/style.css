@@ -357,7 +357,6 @@ dialog[open] {
   display: grid;
   grid-template-columns: 20% 80%;
   align-content: center;
-  row-gap: 30px;
   padding: 30px 42px;
 }
 
