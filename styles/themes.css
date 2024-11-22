@@ -4,3 +4,117 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-light {
+    --bg-color: #FFFFFF;
+    --accent-color: #000000;
+    --header-weight: 700;
+    --main-weight: 400;
+    --bg-gradient: 
+    repeating-linear-gradient(
+        to right, #d3d3d3 0, #d3d3d3 2px, 
+        transparent 2px, transparent 4px),
+    repeating-linear-gradient(
+        to bottom, #e0c3c3 0, #d3d3d3 2px, 
+        transparent 2px, transparent 4px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+}
+
+:root.theme-light .button__text {
+    --accent-color: #FFFFFF;
+}
+
+:root.theme-light .floppy {
+    --accent-color: #FFFFFF;
+}
+
+:root.theme-light .contour {
+    --contour-color: #000000;
+}
+
+:root.theme-dark {
+    --bg-color: #000000;
+    --accent-color: #00CC14;
+    --header-weight: 785;
+    --main-weight: 465;
+    --bg-gradient: 
+    repeating-linear-gradient(
+        to right, #000 0, #000 2px, 
+        transparent 2px, transparent 4px),
+    repeating-linear-gradient(
+        to bottom, #000 0, #000 2px, 
+        transparent 2px, transparent 4px),
+    linear-gradient(#007f0c, #004306);
+}
+
+:root.theme-dark .button__text {
+    --bg-color: var(--accent-color);
+}
+
+:root.theme-dark .floppy {
+    --bg-color: var(--accent-color);
+}
+
+:root.theme-dark .contour {
+    --contour-color: #00CC14;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  
+    :root {
+        --bg-color: #000000;
+        --accent-color: #00CC14;
+        --header-weight: 785;
+        --main-weight: 465;
+        --bg-gradient: 
+        repeating-linear-gradient(
+            to right, #000 0, #000 2px, 
+            transparent 2px, transparent 4px),
+        repeating-linear-gradient(
+            to bottom, #000 0, #000 2px, 
+            transparent 2px, transparent 4px),
+        linear-gradient(#007f0c, #004306);
+    }
+
+    .button__text {
+        --bg-color: var(--accent-color);
+    }
+
+    .floppy {
+        --bg-color: var(--accent-color);
+    }
+
+    .contour {
+        --contour-color: #00CC14;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+  
+    :root {
+        --bg-color: #FFFFFF;
+        --accent-color: #000000;
+        --header-weight: 700;
+        --main-weight: 400;
+        --bg-gradient: 
+        repeating-linear-gradient(
+            to right, #d3d3d3 0, #d3d3d3 2px, 
+            transparent 2px, transparent 4px),
+        repeating-linear-gradient(
+            to bottom, #e0c3c3 0, #d3d3d3 2px, 
+            transparent 2px, transparent 4px),
+        linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    }
+    
+    .button__text {
+        --accent-color: #FFFFFF;
+    }
+    
+    .floppy {
+        --accent-color: #FFFFFF;
+    }
+    
+    .contour {
+        --contour-color: #000000;
+    }
+}
