@@ -18,7 +18,7 @@
       translate: 0;
     }
   
-    to{
+    to {
       translate: 2px;
     }
   }
@@ -28,7 +28,7 @@
       transform: scale(1);
     }
   
-    to{
+    to {
       transform: scale(1.5);
     }
   }
@@ -38,7 +38,7 @@
       opacity: 0;
     }
   
-    to{
+    to {
       opacity: 1;
     }
   }
