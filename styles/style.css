@@ -26,7 +26,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-inline: calc(100vw - 66.8em);
   padding-block-start: 6.9%;
   gap: 100px;
 }
@@ -43,6 +42,7 @@
   inline-size: 100%;
   padding-block-start: 1.6em;
   padding-block-end: 1.4em;
+  max-inline-size: 700px;
 }
 
 .header__title {
@@ -122,7 +122,7 @@
 }
 
 .main {
-  inline-size: 100%;
+  max-inline-size: 700px;
 }
 
 .card {
@@ -142,7 +142,7 @@
 .card__header {
   font-variation-settings: 'wdth' var(--header-width), 'wght' var(--header-weight);
   font-size: 1.125em;
-  padding: 5px 5.5px 3px;
+  padding: 5px 9.5px 3px;
   line-height: 1.375em;
 }
 
@@ -150,7 +150,8 @@
   display: flex;
   position: relative;
   border-block: 2px solid var(--accent-color);
-  min-height: calc(100vw - 46.2em);
+  max-width: 100%;
+  min-height: 48.6vw;
 }
 
 .card__image {
@@ -223,7 +224,7 @@
   flex-direction: column;
   gap: 25px;
   padding-block-start: 24px;
-  padding-inline: 22px;
+  padding-inline: 24px;
 }
 
 .padding-margin {
