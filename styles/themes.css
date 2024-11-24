@@ -121,14 +121,6 @@
     .card__article-text {
         --main-weight: 400;
     }
-
-    .button__text {
-        --accent-color: #FFFFFF;
-    }
-    
-    .floppy {
-        --accent-color: #FFFFFF;
-    }
     
     .contour {
         --contour-color: #000000;
