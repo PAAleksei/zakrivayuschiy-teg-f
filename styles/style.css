@@ -152,6 +152,7 @@
   border-block: 2px solid var(--accent-color);
   max-width: 100%;
   min-height: 48.6vw;
+  max-height: 696px;
 }
 
 .card__image {
@@ -194,8 +195,8 @@
 
 .card__label {
   position: absolute;
-  inset-inline-end: 11px;
-  inset-block-start: 21px;
+  inset-inline-end: 25px;
+  inset-block-start: 23px;
   font-family: var(--accent-text);
   font-size: 14px;
   color: var(--accent-color);
@@ -224,7 +225,7 @@
   flex-direction: column;
   gap: 25px;
   padding-block-start: 24px;
-  padding-inline: 24px;
+  padding-inline: 23px;
 }
 
 .padding-margin {
@@ -236,7 +237,7 @@
   justify-content: end;
   gap: 6px;
   margin-inline-end: 25px;
-  margin-block-start: 4px;
+  margin-block-start: 25px;
   margin-block-end: 25px;
 }
 
@@ -335,6 +336,8 @@
   transition: box-shadow 0.3s;
   cursor: pointer;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button::before {
@@ -363,23 +366,22 @@
   font-size: 14px;
   mix-blend-mode: difference;
   color: var(--bg-color);
-  margin: auto;
 }
 
 dialog {
- 
   background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
 }
 
 dialog[open] {
-  display: grid;
-  align-content: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 40px;
-  padding-inline: 30px;
-  padding-block-start: 45px;
-  padding-block-end: 30px;
+  gap: 30px;
+  padding-block: 30px;
+  padding-inline: 0;
+  flex-direction: column;
+  min-width: 354px;
 }
 
 dialog::backdrop {
@@ -387,12 +389,11 @@ dialog::backdrop {
 }
 
 .save-dialog__floppy-text {
-  width: 293px;
-  height: 38px;
   display: flex;
-  gap: 25px;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
+  gap: 25px;
+  width: 100%;
 }
 
 dialog .floppy {
@@ -405,7 +406,7 @@ dialog .floppy {
   font-size: 0.875em;
   line-height: 21px;
   text-transform: uppercase;
-  max-width: 210px;
+  max-width: 225px;
 }
 
 .save-dialog__button {
@@ -418,7 +419,7 @@ dialog .floppy {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-block-start: 3.5%;
+  padding-block-start: 50px;
   padding-block-end: 103px;
 }
 
@@ -445,7 +446,6 @@ dialog .floppy {
   mix-blend-mode: difference;
   color: var(--bg-color);
   transform: scale(0.75);
-  padding-block-start: 2px;
 }
 
 @media (width <= 375px) {
@@ -484,7 +484,8 @@ dialog .floppy {
   }
 
   .card__image-label {
-    min-height: 100vw;
+    min-height: 371px;
+    max-height: 371px;
   }
 
   .card__article-text {
@@ -497,6 +498,7 @@ dialog .floppy {
   .save-button-container {
     padding-block-start: 13.3%;
     padding-inline: 8.6%;
+    padding-block-start: 52px;
     padding-block-end: 100px;
     gap: 8px;
   }
@@ -519,25 +521,15 @@ dialog .floppy {
   }
 
   dialog[open] {
-    padding-block-start: 41px;
-    padding-block-end: 30px;
-    width: 341px;
-    padding-inline-start: 38px;
+    min-width: 341px;
   }
 
   .save-dialog__floppy-text {
-    width: 100%;
-    padding-inline-start: 0;
-    gap: 0;
+    gap: 16px;
   }
 
   .save-dialog__text {
-    max-width: 217px;
-    padding-inline-start: 20px;
-  }
-
-  dialog .floppy {
-    width: 40px;
+    max-width: 201px;
     padding-inline-start: 5px;
   }
 
