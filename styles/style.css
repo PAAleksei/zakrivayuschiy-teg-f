@@ -40,14 +40,13 @@
   align-items: center;
   flex-wrap: wrap;
   inline-size: 100%;
-  padding-block-start: 23px;
   padding-block-end: 25px;
   max-inline-size: 700px;
 }
 
 .header__title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  padding-block-start: 112px;
+  padding-block-start: 136px;
   max-width: 100%;
 }
 
@@ -58,15 +57,15 @@
 }
 
 .theme-menu {
-  padding-block-start: 20px;
-  padding-inline-start: 18px;
+  padding-block-start: 25px;
+  padding-inline-start: 15px;
 }
 
 .theme-menu__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 11px;
+  gap: 16px;
 }
 
 .theme-menu__item {
@@ -142,7 +141,7 @@
 .card__header {
   font-variation-settings: 'wdth' var(--header-width), 'wght' var(--header-weight);
   font-size: 1.125em;
-  padding: 2px 9.5px 3px;
+  padding: 0 9.5px 2px;
   line-height: 1.375em;
 }
 
@@ -465,20 +464,24 @@ dialog .floppy {
 
   .header__title {
     font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-    padding-block-start: 93px;
+    padding-block-start: 120px;
   }
   
   .header__subtitle {
-    padding-block-start: 13px;
+    padding-block-start: 20px;
   }
   
   .theme-menu {
-    padding-block-start: 22px;
+    padding-block-start: 25px;
     padding-inline-start: 22px;
   }
   
+  .theme-menu__list {
+    gap: 14px;
+  }
+
   .card__header {
-    padding: 3px 10px 4px;
+    padding: 5px 10px 2px;
     line-height: 1.25em;
   }
 
@@ -492,7 +495,7 @@ dialog .floppy {
   }
 
   .card__article-text {
-    padding-block-start: 25px;
+    padding-block-start: 29px;
     padding-inline: 25px;
     line-height: 1.16em;
     gap: 28px;
