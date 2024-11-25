@@ -47,26 +47,26 @@
 
 .header__title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  padding-block-start: 16%;
+  padding-block-start: 112px;
   max-width: 100%;
 }
 
 .header__subtitle {
-  padding-block-start: 2.5%;
+  padding-block-start: 20px;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
 }
 
 .theme-menu {
-  padding-block-start: 1.3em;
-  padding-inline-start: 1em;
+  padding-block-start: 20px;
+  padding-inline-start: 18px;
 }
 
 .theme-menu__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 0.7em;
+  gap: 11px;
 }
 
 .theme-menu__item {
@@ -142,7 +142,7 @@
 .card__header {
   font-variation-settings: 'wdth' var(--header-width), 'wght' var(--header-weight);
   font-size: 1.125em;
-  padding: 5px 9.5px 3px;
+  padding: 2px 9.5px 3px;
   line-height: 1.375em;
 }
 
@@ -195,8 +195,8 @@
 
 .card__label {
   position: absolute;
-  inset-inline-end: 25px;
-  inset-block-start: 23px;
+  inset-inline-end: 13px;
+  inset-block-start: 25px;
   font-family: var(--accent-text);
   font-size: 14px;
   color: var(--accent-color);
@@ -474,7 +474,7 @@ dialog .floppy {
   
   .theme-menu {
     padding-block-start: 22px;
-    padding-inline-start: 6%;
+    padding-inline-start: 22px;
   }
   
   .card__header {
