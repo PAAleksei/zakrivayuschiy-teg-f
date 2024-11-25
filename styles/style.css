@@ -136,13 +136,14 @@
   background-color: var(--bg-color);
   color: var(--accent-color);
   border: 2px solid var(--accent-color);
+  flex: 1;
 }
 
 .card__header {
   font-variation-settings: 'wdth' var(--header-width), 'wght' var(--header-weight);
-  font-size: 1.125em;
-  padding: 0 9.5px 2px;
-  line-height: 1.375em;
+  font-size: 18px;
+  padding: 0 9px 3px;
+  line-height: 21.78px;
 }
 
 .card__image-label {
@@ -217,18 +218,18 @@
 } 
 
 .card__article-text {
-  font-size: 1.125em;
-  line-height: 1.2em;
+  font-size: 18px;
+  line-height: 21px;
   font-variation-settings: 'wdth' var(--main-width), 'wght' var(--main-weight);
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding-block-start: 24px;
-  padding-inline: 23px;
+  padding-block-start: 27px;
+  padding-inline: 24px;
 }
 
-.padding-margin {
-  padding-inline: 28px;
+.padding-inline {
+  padding-inline: 27px;
 }
 
 .card__container-button-like {
@@ -402,7 +403,7 @@ dialog .floppy {
 .save-dialog__text {
   font-family: var(--accent-text);
   color: var(--accent-color);
-  font-size: 0.875em;
+  font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   max-width: 225px;
@@ -482,7 +483,7 @@ dialog .floppy {
 
   .card__header {
     padding: 5px 10px 2px;
-    line-height: 1.25em;
+    line-height:  21.78px;
   }
 
   .card__label {
@@ -496,10 +497,14 @@ dialog .floppy {
   }
 
   .card__article-text {
-    padding-block-start: 29px;
+    padding-block-start: 30px;
     padding-inline: 25px;
-    line-height: 1.16em;
+    line-height: 21px;
     gap: 28px;
+  }
+
+  .padding-inline {
+    padding-inline: 27px;
   }
 
   .save-button-container {
