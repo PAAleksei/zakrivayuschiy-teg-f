@@ -486,7 +486,8 @@ dialog .floppy {
   }
 
   .card__label {
-    inset-inline-end: 13px;
+    inset-inline-end: 11px;
+    inset-block-start: 23px;
   }
 
   .card__image-label {
