@@ -195,7 +195,7 @@
 
 .card__label {
   position: absolute;
-  inset-inline-end: 13px;
+  inset-inline-end: 25px;
   inset-block-start: 25px;
   font-family: var(--accent-text);
   font-size: 14px;
@@ -480,6 +480,10 @@ dialog .floppy {
   .card__header {
     padding: 3px 10px 4px;
     line-height: 1.25em;
+  }
+
+  .card__label {
+    inset-inline-end: 13px;
   }
 
   .card__image-label {
